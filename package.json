@@ -1,0 +1,32 @@
+{
+  "name": "pms-typings",
+  "private": true,
+  "version": "0.1.0",
+  "main": "./lib/src/main.js",
+  "types": "./src/src/main.d.ts",
+  "config": {
+    "access": "private"
+  },
+  "scripts": {
+    "start": "npx tsc --watch",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "exports": {
+    ".": "./lib/src/index.js",
+    "./api": "./lib/src/api/index.js",
+    "./api/requests": "./lib/src/api/requests/index.js",
+    "./api/responses": "./lib/src/api/responses/index.js",
+    "./domain": "./lib/src/domain/index.js"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.1.6"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

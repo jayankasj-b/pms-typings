@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "lib",
+    "sourceMap": true,
+    "declaration": true,
+    "target": "es2017",
+    "baseUrl": "./src",
+    "paths": {
+      "typings": ["./index.ts"],
+      "typings/api": ["./api/index.ts"],
+      "typings/api/requests": ["./api/requests/index.ts"],
+      "typings/api/responses": ["./api/responses/index.ts"],
+      "typings/domain": ["./domain/index.ts"]
+    },
+    "strict": true
+  },
+  "include": ["src"]
+}
